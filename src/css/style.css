@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
   font-family: Lato;
@@ -60,6 +61,7 @@ nav a  {
 
 footer a {
   transition: color 0.4s;
+  
 }
 
 nav a:hover,
@@ -186,15 +188,15 @@ nav a.selected {
   text-decoration: underline;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-}
 
 /*Home page footer*/
 .front {
   display: flex;
   justify-content: center;
+}
+
+.front a {
+  margin: 0 16px 0 16px;
 }
 /* end home page footer */
 .social a {
@@ -258,7 +260,7 @@ section.piece-alt div.description {
 .file-nav {
   display: flex;
   justify-content: space-between;
-   margin: 0 -200px;
+  margin: 0 -200px;
 }
 
 .file-nav h2 {
@@ -371,10 +373,10 @@ body.penledge {
 
 
 .footer-nav {
-  display: inline-grid;
+  display: grid;
   grid-template-columns:  1fr max-content 50px 50px;
-  grid-auto-rows: 8px;
- 	margin-top: -20px;
+  grid-auto-rows: 10px;
+  margin-top: -20px;
 }
 
 .footer-nav a, .top a {
@@ -444,7 +446,7 @@ body.penledge {
 }
 
 /*Daisey Records begins*/
-body.daisy-records {
+body.daisy {
   background-color: #20486b;
   color: #FEFDFD;
 }
@@ -495,7 +497,7 @@ body.design {
 }
 
 
-#web a:hover, #web a.selected, #web footer a:hover {
+#web a:hover, .web a.selected, .web.footer a:hover {
     color: #031B1B;
 
 }
@@ -545,7 +547,7 @@ textarea {
   width: 100%;
   background-color: #FEFDFD;
   border: 2px solid #6044EC;
-  color: #FEFDFD;
+  color: #333333;
   padding: 8px 16px 8px 16px;
 }
 
@@ -562,7 +564,7 @@ button {
   background-color: #6044EC;
   color: #FEFDFD;
   border: none;
-  font-family: Josefin Sans;
+  font-family: "Lato";
   font-size: 24px;
   padding: 8px 16px 8px 16px;
   cursor: pointer;
@@ -578,6 +580,9 @@ footer {
   font-weight: 600;
   line-height: 1.3;
   font-size: 32px;
+
+  display: flex;
+  justify-content: space-around;
  	padding: 80px 0 0 0;
 }
 
