@@ -7,7 +7,7 @@ const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const { watch, parallel } = require('gulp');
-
+const webpack = require('webpack-stream')
 
 function css(cb) {
   
@@ -37,6 +37,20 @@ function HTML(cb) {
     cb();
 }
 
+function js (cb){
+    gulp.src('src/js/*')
+        .pipe(webpack({
+            mode: 'production',
+            devtool: 'source-map',
+            output: {
+                filename: 'app.js'
+            }
+        }))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.stream());
+    cb();
+}
+
 function images(cb){
     gulp.src('src/img/*')
     .pipe(imagemin())
@@ -58,7 +72,7 @@ function Sync(cb){
 
 exports.default = function () {
     watch('src/css/*', css)
-    watch('src/*', parallel(HTML, images, Sync)).on('change', browserSync.reload); 
+    watch('src/*', parallel(HTML, js, images, Sync)).on('change', browserSync.reload); 
     
 
     
