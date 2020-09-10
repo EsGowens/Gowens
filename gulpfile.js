@@ -23,7 +23,8 @@ function css(cb) {
           ])
         )
       .pipe(concat('style.css'))
-      .pipe(cleanCss({compatibility: 'ie8'}))
+      .pipe(cleanCss({compatibility: 'ie8', 
+                        inline: ['local', 'remote', 'fonts.googleapis.com']}))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('dist/css'))
       .pipe(browserSync.stream());
