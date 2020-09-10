@@ -10,45 +10,52 @@
   <link rel=“icon” href="/favicon.ico" type=“image/x-icon”>
 </head>
 <body>
-  <header>
-    <a href="index.html"><img src="img/Logo.svg" alt="Garrett Saxon logo" /></a>
-    <nav>
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="selected">Contact</a>
-    </nav>
-  </header>
-  
-  <section class="contact">
-    <div class="form">
-      <h1>
-        Contact me below and I'll try to get back to you within one business day
-      </h1>
-      <form
-    action="https://formspree.io/xgeljpaa"
-    method="POST"
-  >
-    <label>
-      Your email:
-      <input type="text" name="_replyto">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
-  
-    <!-- your other form fields go here -->
-  
-    <button type="submit">Send</button>
-  </form>
-    </div>
-  </section>
-  
-  <footer class="front">
-    <a href="https://twitter.com/EsGowens">Twitter</a>
-    <a href="mailto:kinggsone@gmail.com">Email</a>
-  </footer>
+  <main data-barba="wrapper">
+    <article data-barba="container" data-title="contact">
+    <header>
+      <a href="index.html"><img src="img/Logo.svg" alt="Garrett Saxon logo" /></a>
+      <nav>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="selected">Contact</a>
+      </nav>
+    </header>
+    
+    <section class="contact">
+      <div class="form">
+        <h1>
+          Contact me below and I'll try to get back to you within one business day
+        </h1>
+        <form
+      action="https://formspree.io/xgeljpaa"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="text" name="_replyto">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+    
+      <!-- your other form fields go here -->
+    
+      <button type="submit">Send</button>
+    </form>
+      </div>
+    </section>
+    
+    <footer class="front">
+      <a href="https://twitter.com/EsGowens">Twitter</a>
+      <a href="mailto:kinggsone@gmail.com">Email</a>
+    </footer>
+    </article>
+  </main>
   
   
 </body>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="js/app.js"></script>
 </html>

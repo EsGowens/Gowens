@@ -1,4 +1,8 @@
-   barba.init({
+import barba from '@barba/core';
+import { gsap } from "gsap";
+
+
+    barba.init({
         transitions: [{
           name: 'opacity-transition',
           leave(data) {
