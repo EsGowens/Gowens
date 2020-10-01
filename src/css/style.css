@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 16px;
   line-height: 1.4;
   background-color: #fefdfd;
   color: #031d1d;
-  margin: 80px auto 48px auto; 
+  margin: 80px auto 48px auto;
   width: 1120px;
 }
 
@@ -29,7 +29,7 @@ a {
 
 nav,
 h1 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 900;
   line-height: 1.3;
 }
@@ -47,25 +47,26 @@ h1 {
 }
 
 h2 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 36px;
   font-weight: 600;
   line-height: 1.3;
   margin: 0 0 16px 0;
 }
 
-nav a  {
+nav a {
   margin: 0 24px 0 24px;
   transition: color 0.4s;
 }
 
 footer a {
   transition: color 0.4s;
-  
 }
 
 nav a:hover,
-nav a.selected, footer a:hover, nav a.selected {
+nav a.selected,
+footer a:hover,
+nav a.selected {
   color: #6044ec;
 }
 
@@ -78,7 +79,6 @@ nav a.selected {
   align-items: center;
   justify-content: center;
   padding: 32px 0 32px 0;
-	
 }
 
 .statement h2 {
@@ -92,8 +92,6 @@ nav a.selected {
   text-decoration: none;
 }
 
-
-
 .ptitle {
   height: 380px;
   width: 790px;
@@ -102,16 +100,17 @@ nav a.selected {
 }
 
 #penledge {
-  background-color: #35BD95;
+  background-color: #35bd95;
   border-radius: 0 5px 5px 0;
 }
 
 #daisy {
-  background-color: #20486B;
+  background-color: #20486b;
   border-radius: 0 5px 5px 0;
 }
 
-.ptitle-poster, .ptitle-design {
+.ptitle-poster,
+.ptitle-design {
   grid-column: 6 / span 12;
   height: 380px;
   width: 790px;
@@ -119,14 +118,15 @@ nav a.selected {
   z-index: 2;
 }
 
-.ptitle-poster, .ptitle-design {
+.ptitle-poster,
+.ptitle-design {
   position: relative;
 }
 
-.ptitle-poster h1, .ptitle-design h1 {
+.ptitle-poster h1,
+.ptitle-design h1 {
   font-size: 36px;
-  color: #FEFDFD;
-  
+  color: #fefdfd;
 }
 
 .ptitle-alt {
@@ -137,11 +137,11 @@ nav a.selected {
 }
 
 .ptitle-poster {
-  background-color: #AF9E56;
+  background-color: #af9e56;
 }
 
 .ptitle-design {
-  background-color: #6044EC;
+  background-color: #6044ec;
 }
 
 .svg img {
@@ -150,7 +150,6 @@ nav a.selected {
   top: 10%;
   transform: translate(-50%, -10%);
 }
-
 
 .click {
   outline: 1px solid #000;
@@ -162,11 +161,10 @@ nav a.selected {
 }
 
 .project:hover .click {
- transform: translate(10%);
- 
- transition:  cubic-bezier(0.175, 0.885, 0.32, 1.275) .9s;
+  transform: translate(10%);
+
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.9s;
   /*going to try to do transform X to get this to slide*/
-  
 }
 
 .text {
@@ -175,19 +173,18 @@ nav a.selected {
   place-items: center center;
 }
 
-.text p {
-  font-family: 'Inter';
+.text ul {
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   margin: 8px;
-  line-height: .5;
+  line-height: 1;
 }
 
 .underline {
   text-decoration: underline;
 }
-
 
 /*Home page footer*/
 .front {
@@ -201,19 +198,18 @@ nav a.selected {
 /* end home page footer */
 .social a {
   margin: 0 16px 0 16px;
-  
 }
 
 /*Work pages begin*/
 
 .subtitle {
   text-align: center;
-  
 }
 
 /*section info here: coming soon alt-alts for last two pages*/
 
-section.piece, section.piece-alt {
+section.piece,
+section.piece-alt {
   margin: 80px 0 80px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -267,13 +263,11 @@ section.piece-alt div.description {
   font-size: 24px;
   font-weight: 900;
   text-transform: uppercase;
-  
 }
 
 .left-arrow {
   display: grid;
   grid-template-columns: max-content max-content;
-  
 }
 
 .left-arrow img {
@@ -282,8 +276,7 @@ section.piece-alt div.description {
 
 .right-arrow {
   display: grid;
-  grid-template-columns: max-content max-content ;
-  
+  grid-template-columns: max-content max-content;
 }
 
 .right-arrow img {
@@ -293,14 +286,14 @@ section.piece-alt div.description {
 /*Penledge begins*/
 
 body.penledge {
-  background-color: #35BD95;
+  background-color: #35bd95;
 }
 
-#pen a:hover, #pen a.selected, #pen footer a:hover {
-    color: #fefdfd;
-
+#pen a:hover,
+#pen a.selected,
+#pen footer a:hover {
+  color: #fefdfd;
 }
-
 
 #pen a.selected {
   border-bottom: 2px solid #fefdfd;
@@ -334,8 +327,7 @@ body.penledge {
   width: 200px;
   background-color: #35bd95;
   border: 2px solid #f2e9da;
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
 
 .p-darkgreen {
@@ -371,15 +363,15 @@ body.penledge {
 }
 /*end palette colors*/
 
-
 .footer-nav {
   display: grid;
-  grid-template-columns:  1fr max-content 50px 50px;
+  grid-template-columns: 1fr max-content 50px 50px;
   grid-auto-rows: 10px;
   margin-top: -20px;
 }
 
-.footer-nav a, .top a {
+.footer-nav a,
+.top a {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
@@ -390,7 +382,6 @@ body.penledge {
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 3;
- 	
 }
 
 .bread {
@@ -406,7 +397,6 @@ body.penledge {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2;
-  
 }
 
 .gr-file2 {
@@ -414,7 +404,6 @@ body.penledge {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
-  
 }
 
 .gr-file3 {
@@ -433,7 +422,7 @@ body.penledge {
 
 .top a {
   font-size: 16px;
-  
+
   margin-right: 4px;
 }
 
@@ -441,38 +430,40 @@ body.penledge {
   margin: 0 0 4px 0;
 }
 
-#pen .footer-nav a:hover, #pen .top a:hover {
+#pen .footer-nav a:hover,
+#pen .top a:hover {
   color: #031d1d;
 }
 
 /*Daisey Records begins*/
 body.daisy {
   background-color: #20486b;
-  color: #FEFDFD;
+  color: #fefdfd;
 }
 
-#dais a, #dais .footer-nav a, #dais .top a {
-  color: #FEFDFD;
+#dais a,
+#dais .footer-nav a,
+#dais .top a {
+  color: #fefdfd;
 }
 
-
-#dais a:hover, #dais a.selected, #dais footer a:hover {
-    color: #FD8002;
-
+#dais a:hover,
+#dais a.selected,
+#dais footer a:hover {
+  color: #fd8002;
 }
-
 
 #dais a.selected {
-  border-bottom: 2px solid #FD8002;
+  border-bottom: 2px solid #fd8002;
 }
 
-#dais .footer-nav a:hover, #dais .top a:hover {
-  color: #FEFDFD;
+#dais .footer-nav a:hover,
+#dais .top a:hover {
+  color: #fefdfd;
 }
 
 .file-nav#dais h2 {
-  color: #Fefdfd;
-  
+  color: #fefdfd;
 }
 
 .colorboxcontain-alt {
@@ -484,36 +475,37 @@ body.daisy {
 }
 /*Posters begins*/
 body.posters {
-  background-color: #AF9E56;
+  background-color: #af9e56;
 }
 /*Web Design begins*/
 body.design {
-  background-color: #6044EC;
+  background-color: #6044ec;
   color: #fefdfd;
 }
 
-#web a, #web .footer-nav a, #web .top a {
-  color: #FEFDFD;  
+#web a,
+#web .footer-nav a,
+#web .top a {
+  color: #fefdfd;
 }
 
-
-#web a:hover, .web a.selected, .web.footer a:hover {
-    color: #031B1B; 
-
+#web a:hover,
+.web a.selected,
+.web.footer a:hover {
+  color: #031b1b;
 }
-
 
 #web a.selected {
-  border-bottom: 2px solid #031B1B;
+  border-bottom: 2px solid #031b1b;
 }
 
-#web .footer-nav a:hover, #web .top a:hover {
-  color: #FEFDFD;
+#web .footer-nav a:hover,
+#web .top a:hover {
+  color: #fefdfd;
 }
 
 .file-nav#web h2 {
-  color: #Fefdfd;
-  
+  color: #fefdfd;
 }
 /*work pages end*/
 
@@ -525,11 +517,10 @@ section.about {
 
 section.about div.photo {
   grid-column: 1 / span 6;
-  
 }
 
 section.about div.description {
- grid-column: 7 / span 4;
+  grid-column: 7 / span 4;
 }
 
 section.about h1 {
@@ -545,8 +536,8 @@ section.about p {
 input,
 textarea {
   width: 100%;
-  background-color: #FEFDFD;
-  border: 2px solid #6044EC;
+  background-color: #fefdfd;
+  border: 2px solid #6044ec;
   color: #333333;
   padding: 8px 16px 8px 16px;
 }
@@ -561,8 +552,8 @@ textarea {
 }
 
 button {
-  background-color: #6044EC;
-  color: #FEFDFD;
+  background-color: #6044ec;
+  color: #fefdfd;
   border: none;
   font-family: "Lato";
   font-size: 24px;
@@ -570,8 +561,9 @@ button {
   cursor: pointer;
 }
 
-input:focus,textarea:focus {
-  border: 2px solid #6044EC;
+input:focus,
+textarea:focus {
+  border: 2px solid #6044ec;
 }
 /*contact form end*/
 
@@ -583,11 +575,7 @@ footer {
 
   display: flex;
   justify-content: space-around;
- 	padding: 80px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 /*media queries*/
-
-
-
-
